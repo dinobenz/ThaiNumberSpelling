@@ -26,14 +26,14 @@ namespace Dinobenz.ThaiNumberSpelling
                 {
                     if (i == valueText.Length - 1)
                     {
-                        switch (valueText[i].ToString())
+                        switch (valueText[i])
                         {
-                            case "1":
+                            case '1':
                                 if (ret.Length > 0)
                                 {
                                     if (valueText[i - 1] == '0')
                                     {
-                                        ret.Append(digits[Convert.ToInt32(valueText[i])]);
+                                        ret.Append(digits[Convert.ToInt32(valueText[i].ToString())]);
                                     }
                                     else
                                     {
@@ -42,11 +42,11 @@ namespace Dinobenz.ThaiNumberSpelling
                                 }
                                 else
                                 {
-                                    ret.Append(digits[Convert.ToInt32(valueText[i])]);
+                                    ret.Append(digits[Convert.ToInt32(valueText[i].ToString())]);
                                 }
                                 break;
                             default:
-                                ret.Append(digits[Convert.ToInt32(valueText[i])]);
+                                ret.Append(digits[Convert.ToInt32(valueText[i].ToString())]);
                                 break;
                         }
                     }
@@ -61,13 +61,13 @@ namespace Dinobenz.ThaiNumberSpelling
                                 ret.Append("ยี่");
                                 break;
                             default:
-                                ret.Append(digits[Convert.ToInt32(valueText[i])]);
+                                ret.Append(digits[Convert.ToInt32(valueText[i].ToString())]);
                                 break;
                         }
                     }
                     else
                     {
-                        ret.Append(digits[Convert.ToInt32(valueText[i])]);
+                        ret.Append(digits[Convert.ToInt32(valueText[i].ToString())]);
                     }
 
                     if (valueText.Length - 1 - i >= units.Length)
