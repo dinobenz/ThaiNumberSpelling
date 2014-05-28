@@ -138,5 +138,15 @@ namespace Dinobenz.ThaiNumberSpelling.Test
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Billion_321000321() {
+          number = 321000321;
+
+          var expected = "สามร้อยยี่สิบเอ็ดล้านสามร้อยยี่สิบเอ็ด";
+          var actual = number.ToThaiSpelling();
+
+          Assert.AreEqual(expected, actual);
+        }
     }
 }
