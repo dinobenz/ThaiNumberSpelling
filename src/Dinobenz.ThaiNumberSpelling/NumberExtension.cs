@@ -24,7 +24,7 @@ namespace Dinobenz.ThaiNumberSpelling
             {
                 if (valueText[i] != '0')
                 {
-                    if (i == valueText.Length - 1)
+                    if (i % 6 == (valueText.Length - 1) % 6)
                     {
                         switch (valueText[i])
                         {
