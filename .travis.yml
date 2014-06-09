@@ -6,3 +6,4 @@ install:
   - sudo apt-get install mono-devel mono-gmcs nunit-console
 script:
   - xbuild src/ThaiNumberSpelling.sln
+  - nunit-console lib/Dinobenz.ThaiNumberSpelling.Test.dll

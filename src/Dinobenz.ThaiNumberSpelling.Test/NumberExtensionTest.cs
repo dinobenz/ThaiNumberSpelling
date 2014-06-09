@@ -1,13 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 
 namespace Dinobenz.ThaiNumberSpelling.Test
 {
-    [TestClass]
+    [TestFixture]
     public class NumberExtensionTest
     {
         int number;
 
-        [TestMethod]
+        [Test]
         public void Zero()
         {
             number = 0;
@@ -18,7 +18,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void One()
         {
             number = 1;
@@ -29,7 +29,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Two()
         {
             number = 2;
@@ -40,7 +40,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Three()
         {
             number = 3;
@@ -51,7 +51,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Eleven()
         {
             number = 11;
@@ -62,7 +62,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void TwentyOne()
         {
             number = 21;
@@ -73,7 +73,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void OneHundredEleven()
         {
             number = 111;
@@ -84,7 +84,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void TwoHundredEleven()
         {
             number = 211;
@@ -95,7 +95,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void OneThousandOneHundredEleven()
         {
             number = 1111;
@@ -106,7 +106,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void TenThousandOneHundredEleven()
         {
             number = 11111;
@@ -117,7 +117,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void OneHundredThousandOneHundredEleven()
         {
             number = 111111;
@@ -128,7 +128,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void OneMillionOneHundredThousandOneHundredElevenEleven()
         {
             number = 1111111;
@@ -139,7 +139,7 @@ namespace Dinobenz.ThaiNumberSpelling.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Billion_321000321() {
           number = 321000321;
 
