@@ -1,4 +1,6 @@
-﻿ThaiNumberSpelling
+﻿![Artemis Build](https://api.travis-ci.org/dinobenz/ThaiNumberSpelling.png)
+
+ThaiNumberSpelling
 ==================
 
 Convert from English number to Thai number spelling
