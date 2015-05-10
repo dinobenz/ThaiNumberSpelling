@@ -20,3 +20,8 @@ Convert from English number to Thai number spelling
 ## Building
 
 We use [Travis CI](http://travis-ci.org/) to verify the build: ![Artemis Build](https://api.travis-ci.org/dinobenz/ThaiNumberSpelling.png)
+
+## Installing
+```shell
+PM> Install-Package Dinobenz.ThaiNumberSpelling
+```
