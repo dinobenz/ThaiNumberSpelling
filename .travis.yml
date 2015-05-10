@@ -1,17 +1,11 @@
 ## Travis CI Integration
+language: csharp
+solution: src/ThaiNumberSpelling.sln
 
-language: c
-
-env:
-  - EnableNuGetPackageRestore=true
-
- before_install:
-  # Make sure mono is installed,
-  # pipe stdout to dev/null because qq is still too chatty
-  - sudo apt-get update -qq > /dev/null
-  - sudo apt-get install -qq mono-devel > /dev/null
-  - mozroots --import --sync
+install:
+  - sudo apt-get install nunit-console
+  - nuget restore src/ThaiNumberSpelling.sln
 
 script:
- - xbuild src/ThaiNumberSpelling.sln
- - nunit-console lib/Dinobenz.ThaiNumberSpelling.Test.dll
+  - xbuild src/ThaiNumberSpelling.sln
+  - nunit-console lib/Dinobenz.ThaiNumberSpelling.Test.dll
