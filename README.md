@@ -1,4 +1,8 @@
-﻿ThaiNumberSpelling
+﻿[![Build status](https://api.travis-ci.org/dinobenz/ThaiNumberSpelling.png)](https://travis-ci.org/dinobenz/ThaiNumberSpelling)
+[![Nuget Version](https://img.shields.io/nuget/v/Dinobenz.ThaiNumberSpelling.svg)](https://www.nuget.org/packages/Dinobenz.ThaiNumberSpelling)
+[![Nuget Downloads](https://img.shields.io/nuget/dt/Dinobenz.ThaiNumberSpelling.svg)](https://www.nuget.org/packages/Dinobenz.ThaiNumberSpelling)
+
+ThaiNumberSpelling
 ==================
 
 Convert from English number to Thai number spelling
@@ -16,10 +20,6 @@ Convert from English number to Thai number spelling
 111,111 = หนึ่งแสนหนึ่งหมื่นหนึ่งพันหนึ่งร้อยสิบเอ็ด
 
 1,111,111 = หนึ่งล้านหนึ่งแสนหนึ่งหมื่นหนึ่งพันหนึ่งร้อยสิบเอ็ด
-
-## Building
-
-We use [Travis CI](http://travis-ci.org/) to verify the build: ![Artemis Build](https://api.travis-ci.org/dinobenz/ThaiNumberSpelling.png)
 
 ## Installing
 ```shell
